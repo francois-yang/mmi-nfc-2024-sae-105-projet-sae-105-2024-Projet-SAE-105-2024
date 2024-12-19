@@ -15,8 +15,8 @@
     <link href="/src/css/style.css" rel="stylesheet" />
 
     <!--Scripts-->
-    <script type="module" src="/src/js/carrousel.js" defer></script>
-    <script type="module" src="/src/js/menu.js" defer></script>
+    <script type="module" src="/src/js/carrousel.js"></script>
+    <script type="module" src="/src/js/menu.js"></script>
 
 </head>
 
@@ -55,44 +55,71 @@
     </header>
     <main>
         <div class="chapeau">
-            <p class="chapeau_texte">Le bouclier est l’un des objets les plus emblématiques de l’histoire de
+            <p class="chapeau_texte">📜 | Le bouclier est l’un des objets les plus emblématiques de l’histoire de
                 l’humanité. Utilisé à travers les civilisations comme un outil de protection, il a évolué tant dans
                 sa forme que dans sa symbolique</p>
         </div>
 
-        <section class="bouclier-antiquite">
-            <h1 class="bouclier__titre-antiquite"></h1>
-            <div class="bouclier__images">
-                <img src="/assets/img/body/bouclier_antiquite.webp" alt="Bouclier de l'antiquité"
+        <section class="bouclier">
+            <h2 class="bouclier__titre">Antiquité</h2>
+            <figure class="bouclier__images">
+                <img src="/assets/img/body/bouclier/bouclier_antiquite.webp" alt="Bouclier de l'antiquité"
                     class="bouclier__image">
-                <p class="bouclier__legende">Bouclier spartiate de l'Antiquité</p>
-            </div>
+                    <figcaption class="bouclier__legende">Bouclier spartiate de l'Antiquité</figcaption>
+                </figure>
+                <div class="bouclier__contenu">
+                    <div class="bouclier__composition">
+                        <h2 class="bouclier__sous-titre">Composition du bouclier</h2>
+                        <p class="bouclier__texte">
+                            Les premiers boucliers étaient fabriqués en matériaux naturels (bois, cuir). Ils servaient
+                            principalement à se protéger contre les attaques physiques.
+                        </p>
+                    </div>
+                    <div class="bouclier__valeur-symbolique">
+                        <h2 class="bouclier__sous-titre">Valeur symbolique</h2>
+                        <p class="bouclier__texte">
+                            Dans les sociétés anciennes (Grecs, Romains), le bouclier symbolisait la défense collective
+                            et
+                            l'appartenance à une cité ou une armée. Par exemple, chez les hoplites grecs, perdre son
+                            bouclier était un déshonneur.
+                        </p>
+                    </div>
+                </div>
+        </section>
+
+        <section class="bouclier">
+            <h2 class="bouclier__titre">Moyen-âge</h2>
+            <figure class="bouclier__images">
+                <img src="/assets/img/body/bouclier/bouclier_chevalier.webp" alt="Bouclier de l'antiquité"
+                    class="bouclier__image">
+                <figcaption class="bouclier__legende">Bouclier de chevalier médiéval</figcaption>
+            </figure>
             <div class="bouclier__contenu">
                 <div class="bouclier__composition">
                     <h2 class="bouclier__sous-titre">Composition du bouclier</h2>
                     <p class="bouclier__texte">
-                        Les premiers boucliers étaient fabriqués en matériaux naturels (bois, cuir). Ils servaient
-                        principalement à se protéger contre les attaques physiques.
+                        Les boucliers médiévaux étaient souvent fabriqués en métal, avec des formes plus grandes
+                        (bouclier en cerf-volant, écu). Ils portaient des motifs héraldiques représentant les familles
+                        nobles et les chevaliers.
                     </p>
                 </div>
                 <div class="bouclier__valeur-symbolique">
                     <h2 class="bouclier__sous-titre">Valeur symbolique</h2>
                     <p class="bouclier__texte">
-                        Dans les sociétés anciennes (Grecs, Romains), le bouclier symbolisait la défense collective et
-                        l'appartenance à une cité ou une armée. Par exemple, chez les hoplites grecs, perdre son
-                        bouclier était un déshonneur.
+                        Le bouclier devenait un symbole de noblesse, de loyauté, et d'identité sociale. Les armoiries
+                        ornant les boucliers étaient un signe de prestige et de statut familial.
                     </p>
                 </div>
             </div>
         </section>
 
-        <section class="bouclier-renaissance">
-            <h1 class="bouclier__titre-renaissance">Renaissance et époque moderne</h1>
-            <div class="bouclier__images">
-                <img src="/assets/img/body/bouclier_renaissance.webp" alt="Bouclier de la Renaissance"
+        <section class="bouclier">
+            <h2 class="bouclier__titre">Renaissance et époque moderne</h2>
+            <figure class="bouclier__images">
+                <img src="/assets/img/body/bouclier/bouclier_renaissance.webp" alt="Bouclier de la Renaissance"
                     class="bouclier__image">
-                <p class="bouclier__legende">Bouclier de la renaissance</p>
-            </div>
+                <figcaption class="bouclier__legende">Bouclier de la renaissance</figcaption>
+            </figure>
             <div class="bouclier__contenu">
                 <div class="bouclier__role">
                     <h2 class="bouclier__sous-titre">Rôle du bouclier</h2>
@@ -112,13 +139,13 @@
             </div>
         </section>
 
-        <section class="bouclier-contemporain">
-            <h1 class="bouclier__titre-contemporain">Contemporain</h1>
-            <div class="bouclier__images">
-                <img src="/assets/img/body/bouclier_contemporain.webp" alt="Bouclier anti-émeute"
+        <section class="bouclier">
+            <h2 class="bouclier__titre">Contemporain</h2>
+            <figure class="bouclier__images">
+                <img src="/assets/img/body/bouclier/bouclier_contemporain.webp" alt="Bouclier anti-émeute"
                     class="bouclier__image">
-                <p class="bouclier__legende">Bouclier anti-émeute</p>
-            </div>
+                <figcaption class="bouclier__legende">Bouclier anti-émeute</figcaption>
+            </figure>
             <div class="bouclier__contenu">
                 <div class="bouclier__role">
                     <h2 class="bouclier__sous-titre">Rôle du bouclier</h2>
@@ -140,41 +167,51 @@
 
 
 
+        <div class="bouclier__fin">
+            <p class="bouclier__texte-fin">Après vous avoir présenté cet objet sous différentes époques, nous allons
+                passer
+                à l’article suivant sur le livre “L’Iliade”.
+            </p>
+        </div>
+        <div class="livre__link">
+            <a href="/fr/le_livre.html">Vers l'article du livre</a>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__image">
+            <img src="../assets/img/image_footer.webp" alt="Image du footer">
+        </div>
+        <div class="footer__section">
+            <h3 class="footer__section-title">Menu</h3>
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="/fr/contact.html" class="footer__link">Contact</a></li>
+                    <li class="footer__item"><a href="/fr/a_propos.html" class="footer__link">A propos</a></li>
+                    <li class="footer__item"><a href="/fr/autres_projets.html" class="footer__link">Autres
+                            projets</a></li>
+                    <li class="footer__item"><a href="/fr/mention_legale" class="footer__link">Mentions légales</a>
+                    </li>
+                </ul>
+        </div>
+        <div class="footer__section">
+            <h3 class="footer__section-title">Nos réseaux sociaux</h3>
+            <div class="footer__socials">
+                <img src="../assets/img/footer/logo_youtube.webp" alt="logo Youtube" class="footer__social-icon"
+                    loading="lazy">
+                <img src="../assets/img/footer/logo_linkdin.webp" alt="logo LinkedIn" class="footer__social-icon"
+                    loading="lazy">
+                <img src="../assets/img/footer/logo_instagram.webp" alt="logo Instagram" class="footer__social-icon"
+                    loading="lazy">
+                <img src="../assets/img/footer/logo_facebook.webp" alt="logo Facebook" class="footer__social-icon"
+                    loading="lazy">
+                <img src="../assets/img/footer/logo_mmi.webp" alt="Logo de MMI Montbéliard" class="footer__social-icon"
+                    loading="lazy">
+            </div>
+        </div>
+        <div class="footer__infos">
+            <span>Francois YANG groupe C2</span>
+            <span>25 octobre 2024</span>
+        </div>
+    </footer>
+</body>
 
-
-
-        <footer class="footer">
-            <div class="footer__image">
-                <img src="../assets/img/image_footer.webp" alt="Image du footer">
-            </div>
-            <div class="footer__section">
-                <h1 class="footer__section-title">Menu</h3>
-                    <ul class="footer__list">
-                        <li class="footer__item"><a href="/fr/contact.html" class="footer__link">Contact</a></li>
-                        <li class="footer__item"><a href="/fr/a_propos.html" class="footer__link">A propos</a></li>
-                        <li class="footer__item"><a href="/fr/autres projets.html" class="footer__link">Autres
-                                projets</a></li>
-                        <li class="footer__item"><a href="/fr/mention_legale" class="footer__link">Mentions légales</a>
-                        </li>
-                    </ul>
-            </div>
-            <div class="footer__section">
-                <h3 class="footer__section-title">Nos réseaux sociaux</h3>
-                <div class="footer__socials">
-                    <img src="../assets/img/footer/logo_youtube.webp" alt="logo Youtube" class="footer__social-icon"
-                        loading="lazy">
-                    <img src="../assets/img/footer/logo_linkdin.webp" alt="logo LinkedIn" class="footer__social-icon"
-                        loading="lazy">
-                    <img src="../assets/img/footer/logo_instagram.webp" alt="logo Instagram" class="footer__social-icon"
-                        loading="lazy">
-                    <img src="../assets/img/footer/logo_facebook.webp" alt="logo Facebook" class="footer__social-icon"
-                        loading="lazy">
-                    <img src="../assets/img/footer/logo_mmi.webp" alt="Logo de MMI Montbéliard"
-                        class="footer__social-icon" loading="lazy">
-                </div>
-            </div>
-            <div class="footer__infos">
-                <span>Francois YANG groupe C2</span>
-                <span>25 octobre 2024</span>
-            </div>
-        </footer>
+</html>
