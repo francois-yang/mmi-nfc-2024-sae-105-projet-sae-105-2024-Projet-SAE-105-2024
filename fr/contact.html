@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolution du bouclier</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+
+    <!--Style-->
+    <link href="/src/css/style.css" rel="stylesheet" />
+
+    <!--Scripts-->
+    <script type="module" src="/src/js/carrousel.js"></script>
+    <script type="module" src="/src/js/menu.js"></script>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <button class="menu__toggle" id="menuToggle">☰</button>
+        <div class="header__banner">
+            <a href="index.html" target="blank" class="header__logo-link">
+                <img src="/assets/img/logo_bouclier.webp" alt="Logo Bouclier futur" class="header__logo-img"></a>
+        </div>
+        <img src="/assets//img/image_header.webp" alt="Image de fond" class="header__background">
+        <div class="header__content">
+            <h1 class="header__title">L'héritage de la protection</h1>
+        </div>
+
+        <nav class="menu" id="mainNav" aria-hidden="true">
+            <button class="menu__close" id="menuClose">&times;</button>
+            <ul class="menu__list">
+                <li class="menu__item"><a href="/index.html" class="menu__link">Accueil</a></li>
+                <li class="menu__item"><a href="../fr/bouclier.html" class="menu__link">Le bouclier</a>
+                </li>
+                <li class="menu__item"><a href="../fr/le_livre.html" class="menu__link">L'Iliade</a>
+                </li>
+                <li class="menu__item"><a href="../fr/film.html" class="menu__link">Captain America : First
+                        Avengers</a>
+                </li>
+                <li class="menu__item"><a href="../fr/realisateur.html" class="menu__link">Joe Johnston</a></li>
+                <li class="menu_item"><a href="../fr/musique.html">La musique "The Battle"</a></li>
+                <li class="menu_item"><a href="../fr/bouclier_futur.html">Bouclier du futur</a></li>
+                <li class="menu_item"><a href="../fr/filmographie.html">Filmographie</a></li>
+                <li class="menu_item"><a href="../fr/contact.html">Contact</a></li>
+                <li class="menu_item"><a href="../fr/a_propos.html">A propos</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+<main>
+    <div class="chapeau">
+        <p class="chapeau__texte">Si vous avez des questions, entrez vos coordonnées pour que nous puissions vous contacter en retour</p>
+    </div>
+
+    <!-- Section Me contacter -->
+    <section class="contact">
+        <h2 class="contact__titre">Me contacter</h2>
+        <form class="contact__form" action="#" method="POST">
+            <input type="text" class="contact__input" placeholder="Prénom" required>
+            <input type="text" class="contact__input" placeholder="Nom" required>
+            <input type="email" class="contact__input" placeholder="Adresse électronique" required>
+            <input type="tel" class="contact__input" placeholder="Numéro de téléphone">
+            <textarea class="contact__textarea" placeholder="Message" rows="5" required></textarea>
+            <button type="submit" class="contact__button">Soumettre</button>
+        </form>
+    </section>
+
+    <!-- Section Localisation -->
+    <section class="localisation">
+        <h2 class="localisation__titre">Localisation</h2>
+        <div class="localisation__map">
+            <img src = "/assets/img/body/contact/carte.webp" alt="Carte de localisation" class="localisation__image">
+        </div>
+    </section>
+
+    <!-- Section Contacter -->
+    <section class="coordonnees">
+        <h2 class="coordonnees__titre">Contacter</h2>
+        <p class="coordonnees__adresse"><strong>Adresse :</strong> 4 Pl. Lucien Tharradin, 25200 Montbéliard</p>
+        <p class="coordonnees__tel"><strong>Tél :</strong> 03 81 99 47 34</p>
+    </section>
+
+    <!-- Section Horaires -->
+    <section class="horaires">
+        <h2 class="horaires__titre">Horaires :</h2>
+        <p class="horaires__texte"><strong>Lundi - Mardi - Jeudi - Vendredi :</strong><br>8h à 12h – 13h à 17h</p>
+        <p class="horaires__texte"><strong>Mardi uniquement par téléphone ou courriel.</strong></p>
+        <p class="horaires__texte"><strong>Mercredi :</strong><br>8h à 12h</p>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer__section">
+        <h1 class="footer__section-title">Menu</h1>
+            <ul class="footer__list">
+                <li class="footer__item"><a href="/fr/contact.html" class="footer__link">Contact</a></li>
+                <li class="footer__item"><a href="/fr/a_propos.html" class="footer__link">A propos</a></li>
+                <li class="footer__item"><a href="/fr/autres_projets.html" class="footer__link">Autres
+                        projets</a></li>
+                <li class="footer__item"><a href="/fr/mention_legale" class="footer__link">Mentions légales</a>
+                </li>
+            </ul>
+    </div>
+    <div class="footer__section">
+        <h3 class="footer__section-title">Nos réseaux sociaux</h3>
+        <div class="footer__socials">
+            <img src="../assets/img/footer/logo_youtube.webp" alt="logo Youtube" class="footer__social-icon"
+                loading="lazy">
+            <img src="../assets/img/footer/logo_linkdin.webp" alt="logo LinkedIn" class="footer__social-icon"
+                loading="lazy">
+            <img src="../assets/img/footer/logo_instagram.webp" alt="logo Instagram" class="footer__social-icon"
+                loading="lazy">
+            <img src="../assets/img/footer/logo_facebook.webp" alt="logo Facebook" class="footer__social-icon"
+                loading="lazy">
+            <img src="../assets/img/footer/logo_mmi.webp" alt="Logo de MMI Montbéliard" class="footer__social-icon"
+                loading="lazy">
+        </div>
+    </div>
+    <div class ="footer__infos">
+    <span>Francois YANG groupe C2</span>
+    <span>25 octobre 2024</span>
+    </div>
+</footer>
+</body>
+
+</html>
