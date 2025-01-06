@@ -11,3 +11,12 @@ h1, h2, p, a {
     margin: 0;
     padding: 0;
 }
+
+h2{
+    font-family: 'Aldrich', sans-serif;
+    font-weight: normal;
+}
+
+p{
+    font-family: 'Exo', sans-serif;
+}

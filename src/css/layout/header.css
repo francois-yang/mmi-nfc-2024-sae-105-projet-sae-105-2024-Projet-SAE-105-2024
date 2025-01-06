@@ -1,8 +1,9 @@
 .header {
     position: relative;
     height: 100vh;
-    background: #004b5f;
+    background: #1d5d65;
     overflow: hidden;
+    margin-bottom: 50px;
 }
 
 .header__background {
@@ -24,7 +25,11 @@
 }
 
 .header__title {
-    font-size: 2.8rem;
-    text-transform: uppercase;
+    position: relative;
+    top : 50px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 3rem;
+    font-family: 'Aldrich', sans-serif;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }

@@ -1,0 +1,105 @@
+.accueil__chapo {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.accueil__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.accueil__texte {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Section Intro */
+
+.accueil__intro {
+    background-color: white;
+    padding: 2rem 1.5rem;
+    border: 1px solid #007e99;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 300px;
+    text-align: center;
+}
+
+.accueil__image, .accueil__image-bouclier {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.accueil__card-image-bouclier {
+    width: 100%;
+    margin-top: -30px;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.accueil__card-image {
+    display: flex;
+    width: 350px;
+    border-radius: 5%;
+    margin-top: -33px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.accueil__titre {
+    font-size: 1.8rem;
+    color: #004b5f;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.accueil__description {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 1rem 0;
+    text-align: left;
+}
+
+.accueil__button {
+    bottom: 33px;
+    left: 24px;
+    position: relative;
+    border: 1px solid #007e99;
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 300px;
+    text-align: center;
+    padding: 0.7rem 0;
+    background: linear-gradient(180deg, #2CB9C8 0%, #4FA4AD 50%, #176E77 100%);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.accueil__link {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: normal;
+    font-style: italic;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.accueil__link:hover{
+    background: white;
+    transform: scale(1.05); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.accueil__link:active, .accueil__button:active {
+    transform: scale(0.98);
+}
