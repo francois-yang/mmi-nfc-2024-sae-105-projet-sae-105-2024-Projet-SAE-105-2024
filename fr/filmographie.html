@@ -36,7 +36,6 @@
 </head>
 
 <body>
-
     <header class="header">
         <button class="menu__toggle" id="menuToggle">☰</button>
         <div class="header__banner">
@@ -45,7 +44,7 @@
         </div>
         <img src="/assets//img/image_header.webp" alt="Image de fond" class="header__background">
         <div class="header__content">
-            <h1 class="header__title">L'héritage de la protection</h1>
+            <h1 class="header__title">Filmographie</h1>
         </div>
 
         <nav class="menu" id="mainNav" aria-hidden="true">
@@ -60,11 +59,11 @@
                         Avengers</a>
                 </li>
                 <li class="menu__item"><a href="../fr/realisateur.html" class="menu__link">Joe Johnston</a></li>
-                <li class="menu_item"><a href="../fr/musique.html">La musique "The Battle"</a></li>
-                <li class="menu_item"><a href="../fr/bouclier_futur.html">Bouclier du futur</a></li>
-                <li class="menu_item"><a href="../fr/filmographie.html">Filmographie</a></li>
-                <li class="menu_item"><a href="../fr/contact.html">Contact</a></li>
-                <li class="menu_item"><a href="../fr/a_propos.html">A propos</a></li>
+                <li class="menu__item"><a href="../fr/musique.html" class="menu__link">La musique "The Battle"</a></li>
+                <li class="menu__item"><a href="../fr/bouclier_futur.html" class="menu__link">Bouclier du futur</a></li>
+                <li class="menu__item"><a href="../fr/filmographie.html" class="menu__link">Filmographie</a></li>
+                <li class="menu__item"><a href="../fr/contact.html" class="menu__link">Contact</a></li>
+                <li class="menu__item"><a href="../fr/a_propos.html" class="menu__link">A propos</a></li>
             </ul>
         </nav>
 
@@ -76,94 +75,116 @@
                 époques.</p>
         </div>
 
-        <section class="filmographie">
-            <h2 class="filmographie__titre">Films dans l'Antiquité</h2>
-            <div class="filmographie__carrousel">
-                <figure class="filmographie__item">
-                    <img src="/assets/img/body/filmographie/troie.webp" alt="Affiche du film Troie"
-                        class="filmographie__image">
-                    <figcaption class="filmographie__legende">
-                        <p class="filmographie__nom">Troie (2004)</p>
-                        <p class="filmographie__theme">Thème : Guerre - Aventure - Historique</p>
-                    </figcaption>
-                </figure>
-                <figure class="filmographie__item">
-                    <img src="/assets/img/body/filmographie/300.webp" alt="Affiche du film 300"
-                        class="filmographie__image">
-                    <figcaption class="filmographie__legende">
-                        <p class="filmographie__nom">300 (2006)</p>
-                        <p class="filmographie__theme">Thème : Action - Histoire</p>
-                    </figcaption>
-                </figure>
-                <figure class="filmographie__item">
-                    <img src="/assets/img/body/filmographie/gladiator.webp" alt="Affiche du film Gladiator"
-                        class="filmographie__image">
-                    <figcaption class="filmographie__legende">
-                        <p class="filmographie__nom">Gladiator (2000)</p>
-                        <p class="filmographie__theme">Thème : Drame - Historique</p>
-                    </figcaption>
-                </figure>
+        <section class="carousel__film" id="carouselAntiquite">
+            <h2 class="carousel__title">Films dans l'Antiquité</h2>
+            <div class="carousel__container">
+                <div class="carousel__images">
+                    <figure class="film__trilogie-item">
+                        <img src="/assets/img/body/filmographie/troie.webp" alt="Affiche du film Troie"
+                            class="film__trilogie-img">
+                        <figcaption class="carousel__legende">Troie (2004)
+                            <br>Thème : Guerre - Aventure - Historique
+                        </figcaption>
+                    </figure>
+                    <figure class="film__trilogie-item">
+                        <img src="/assets/img/body/filmographie/300.webp" alt="Affiche du film 300"
+                            class="film__trilogie-img">
+                        <figcaption class="carousel__legende">
+                            300 (2006)<br>
+                            Thème : Action - Histoire
+                        </figcaption>
+                    </figure>
+                    <figure class="film__trilogie-item">
+                        <img src="/assets/img/body/filmographie/gladiator.webp" alt="Affiche du film Gladiator"
+                            class="film__trilogie-img">
+                        <figcaption class="carousel__legende">
+                           Gladiator (2000)
+                            <br>Thème : Drame - Historique
+                        </figcaption>
+                    </figure>
+                </div>
             </div>
+            <div class="carousel__nav">
+                <button class="carousel__button" id="prevButtonAntiquite">❮</button>
+                <button class="carousel__button" id="nextButtonAntiquite">❯</button>
+            </div>
+            <div class="carousel__dots"></div>
         </section>
 
-        <section class="filmographie">
-            <h2 class="filmographie__titre">Films dans le Contemporain</h2>
-            <div class="filmographie__carrousel">
-                <figure class="filmographie__item">
-                    <img src="/assets/img/body/filmographie/hunger_games.webp"
-                        alt="Affiche du film Hunger Games Mockingjay Part 2" class="filmographie__image">
-                    <figcaption class="filmographie__legende">
-                        <p class="filmographie__nom">Hunger Games Mockingjay - Part 2 (2015)</p>
-                        <p class="filmographie__theme">Thème : Action - Science-Fiction</p>
-                    </figcaption>
-                </figure>
-                <figure class="filmographie__item">
-                    <img src="/assets/img/body/filmographie/mad_max.webp" alt="Affiche du film Mad Max : Fury Road"
-                        class="filmographie__image">
-                    <figcaption class="filmographie__legende">
-                        <p class="filmographie__nom">Mad Max : Fury Road (2015)</p>
-                        <p class="filmographie__theme">Thème : Action - Science-fiction</p>
-                    </figcaption>
-                </figure>
-                <figure class="filmographie__item">
-                    <img src="/assets/img/body/filmographie/wonder_woman.webp" alt="Affiche du film Wonder Woman"
-                        class="filmographie__image">
-                    <figcaption class="filmographie__legende">
-                        <p class="filmographie__nom">Wonder Woman (2017)</p>
-                        <p class="filmographie__theme">Thème : Action - Aventure - Fantastique</p>
-                    </figcaption>
-                </figure>
+        <section class="carousel__film" id="carouselContemporain">
+            <h2 class="carousel__title">Films dans le Contemporain</h2>
+            <div class="carousel__container">
+                <div class="carousel__images">
+                    <figure class="film__trilogie-item">
+                        <img src="/assets/img/body/filmographie/hunger_games.webp"
+                            alt="Affiche du film Hunger Games Mockingjay Part 2" class="film__trilogie-img">
+                        <figcaption class="carousel__legende">
+                           Hunger Games Mockingjay - Part 2 (2015)<br>
+                                Thème : Action - Science-Fiction
+                        </figcaption>
+                    </figure>
+                    <figure class="film__trilogie-item">
+                        <img src="/assets/img/body/filmographie/mad_max.webp" alt="Affiche du film Mad Max : Fury Road"
+                            class="film__trilogie-img">
+                        <figcaption class="carousel__legende">
+                           Mad Max : Fury Road (2015)<br>Thème : Action -
+                                Science-fiction
+                            
+                        </figcaption>
+                    </figure>
+                    <figure class="film__trilogie-item">
+                        <img src="/assets/img/body/filmographie/wonder_woman.webp" alt="Affiche du film Wonder Woman"
+                            class="film__trilogie-img">
+                        <figcaption class="carousel__legende">
+                           Wonder Woman (2017)<br>Thème : Action - Aventure -
+                                Fantastique
+                            
+                        </figcaption>
+                    </figure>
+                </div>
             </div>
+            <div class="carousel__nav" >
+                <button class="carousel__button" id="prevButtonContemporain">❮</button>
+                <button class="carousel__button" id="nextButtonContemporain">❯</button>
+            </div>
+            <div class="carousel__dots"></div>
         </section>
 
-        <section class="filmographie">
-            <h2 class="filmographie__titre">Films dans le Futur</h2>
-            <div class="filmographie__carrousel">
-                <figure class="filmographie__item">
-                    <img src="/assets/img/body/filmographie/matrix.webp" alt="Affiche du film Matrix Reloaded"
-                        class="filmographie__image">
-                    <figcaption class="filmographie__legende">
-                        <p class="filmographie__nom">Matrix Reloaded (2003)</p>
-                        <p class="filmographie__theme">Thème : Action - Science-Fiction</p>
-                    </figcaption>
-                </figure>
-                <figure class="filmographie__item">
-                    <img src="/assets/img/body/filmographie/black_panthere.webp" alt="Affiche du film Black Panthère"
-                        class="filmographie__image">
-                    <figcaption class="filmographie__legende">
-                        <p class="filmographie__nom">Black Panthère (2018)</p>
-                        <p class="filmographie__theme">Thème : Action - Super-héros</p>
-                    </figcaption>
-                </figure>
-                <figure class="filmographie__item">
-                    <img src="/assets/img/body/filmographie/star_wars.webp" alt="Affiche du film Star Wars"
-                        class="filmographie__image">
-                    <figcaption class="filmographie__legende">
-                        <p class="filmographie__nom">Star Wars Saga</p>
-                        <p class="filmographie__theme">Thème : Action - Science-Fiction</p>
-                    </figcaption>
-                </figure>
+        <section class="carousel__film" id="carouselFutur">
+            <h2 class="carousel__title">Films dans le Futur</h2>
+            <div class="carousel__container">
+                <div class="carousel__images">
+                    <figure class="film__trilogie-item">
+                        <img src="/assets/img/body/filmographie/matrix.webp" alt="Affiche du film Matrix Reloaded"
+                            class="film__trilogie-img">
+                        <figcaption class="carousel__legende">
+                           Matrix Reloaded (2003)<br>
+                                Thème : Action - Science-Fiction
+                        </figcaption>
+                    </figure>
+                    <figure class="film__trilogie-item">
+                        <img src="/assets/img/body/filmographie/black_panthere.webp"
+                            alt="Affiche du film Black Panthère" class="film__trilogie-img">
+                        <figcaption class="carousel__legende">
+                           Black Panthère (2018)<br>
+                                Thème : Action - Super-héros
+                        </figcaption>
+                    </figure>
+                    <figure class="film__trilogie-item">
+                        <img src="/assets/img/body/filmographie/star_wars.webp" alt="Affiche du film Star Wars"
+                            class="film__trilogie-img">
+                        <figcaption class="carousel__legende">
+                           Star Wars Saga<br>
+                                Thème : Action - Science-Fiction
+                        </figcaption>
+                    </figure>
+                </div>
             </div>
+            <div class="carousel__nav">
+                <button class="carousel__button" id="prevButtonFutur">❮</button>
+                <button class="carousel__button" id="nextButtonFutur">❯</button>
+            </div>
+            <div class="carousel__dots"></div>
         </section>
     </main>
 
@@ -190,8 +211,8 @@
                     loading="lazy">
                 <img src="../assets/img/footer/logo_facebook.webp" alt="logo Facebook" class="footer__social-icon"
                     loading="lazy">
-                <img src="../assets/img/footer/logo_mmi.webp" alt="Logo de MMI Montbéliard" class="footer__social-icon"
-                    loading="lazy">
+                <img src="../assets/img/footer/logo_mmi.webp" alt="Logo de MMI Montbéliard"
+                    class="footer__social-icon-mmi" loading="lazy">
             </div>
         </div>
         <div class="footer__infos">

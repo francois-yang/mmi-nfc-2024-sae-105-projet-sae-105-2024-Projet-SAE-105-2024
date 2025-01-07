@@ -1,9 +1,22 @@
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+figcaption {
+    margin-top: 0.5rem;
+    font-style: italic;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'exo', sans-serif;
-    background-color: #eaf6fc;
+    background-color: #eaf9ff;
     color: #00303f;
 }
 
@@ -17,6 +30,18 @@ h2{
     font-weight: normal;
     color: #1d5d65;
     border-bottom: 2px solid #007e99;
+    margin-top:30px;
+}
+
+h2::before{
+content: "";
+display: block;
+width: 90%;
+justify-content: center;
+position : relative;
+height: 2px; 
+background-color: #007e99; 
+margin: -2rem auto 3rem auto; 
 }
 
 p{

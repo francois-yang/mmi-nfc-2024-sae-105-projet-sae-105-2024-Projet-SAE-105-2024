@@ -37,10 +37,7 @@
 }
 
 .livre__legende {
-    margin-top: 20px;
     color: #004b5f;
-    text-align: center;
-    right: 10px;
 }
 
 /* Texte du livre */
@@ -58,10 +55,15 @@
 /* Lien */
 .livre__link {
 
-    color: #007e99;
-    font-weight: bold;
     display: inline-block;
-    transition: all 0.3s;
+    color: #0b9bd9;
+    font-style:italic;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    text-align: center;
+    margin-top: 1rem;
+    position: relative;
+    left: 13%;
 }
 
 .livre__link:active {
@@ -74,18 +76,20 @@
 
 /* Bouton de lien vers l'article */
 .film__link {
-    display: inline-block;
-    flex-direction: column;
-    color: #0b9bd9;
-    font-style:italic;
-    padding: 0.6rem 1.2rem;
-    border-radius: 6px;
-    text-align: center;
-    margin-top: 1rem;
+    display:inline-block;
     position: relative;
+    border: 2px solid #1d5d65;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0.7rem 1rem;
+    background: linear-gradient(180deg, #2CB9C8 0%, #4FA4AD 50%, #176E77 100%);
+    color: white;
+    font-style: italic;
+    text-decoration: none;
     margin-bottom: 30px;
     margin-top: 30px;
-    left: 45%;
+    left: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Dernier paragraphe */

@@ -1,0 +1,92 @@
+h2.no-line::before {
+    display: none;
+}
+
+h2.reduce-line{
+    width: 40%;
+}
+
+.apropos {
+    padding: 2rem 1.5rem;
+}
+
+.apropos__titre {
+    font-size: 1.5rem;
+    width: 100%;
+    color: #1d5d65;
+    text-align: left;
+    margin-top: -50px;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #349cc2;
+    padding-bottom: 0.5rem;
+}
+
+.apropos__texte {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Glossaire */
+.apropos__glossaire {
+    padding: 2rem 1.5rem;
+    border-radius: 10px;
+}
+
+.glossaire__liste {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.glossaire__item {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    border-left: 4px solid #349cc2;
+    padding-left: 1rem;
+    color: #333;
+}
+
+.glossaire__item strong {
+    font-weight: bold;
+    color: #1d5d65;
+}
+
+/* Ligne horizontale */
+.apropos::after {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 2px;
+    background-color: #349cc2;
+    margin: 2rem auto;
+}
+
+/* Responsiveness pour iPhone 12 Pro */
+@media (max-width: 844px) and (orientation: portrait) {
+    .apropos__titre {
+        font-size: 1.4rem;
+    }
+
+    .apropos__texte,
+    .glossaire__item {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 844px) and (orientation: landscape) {
+    .apropos {
+        padding: 1.5rem;
+    }
+
+    .apropos__titre {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .apropos__texte,
+    .glossaire__item {
+        font-size: 0.9rem;
+    }
+}

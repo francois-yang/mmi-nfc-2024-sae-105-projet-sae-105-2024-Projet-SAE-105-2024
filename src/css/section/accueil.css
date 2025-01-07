@@ -16,8 +16,12 @@
 
 /* Section Intro */
 
+.accueil__gras{
+    color:#0b9bd9;
+}
+
 .accueil__intro {
-    background-color: white;
+    background: linear-gradient(180deg, #BFF3FF 0%, #DEF9FF 100%);
     padding: 2rem 1.5rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -90,12 +94,6 @@
     font-style: italic;
     text-decoration: none;
     transition: all 0.3s ease;
-}
-
-.accueil__link:hover{
-    background: white;
-    transform: scale(1.05); 
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .accueil__link:active, .accueil__button:active {

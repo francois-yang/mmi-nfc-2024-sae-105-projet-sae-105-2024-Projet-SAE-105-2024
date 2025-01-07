@@ -81,21 +81,21 @@
 
 @media (max-width: 844px) and (orientation: landscape) {
     .film__trilogie-item {
-        flex: 0 0 30%; /* Chaque affiche occupe 30% de la largeur pour afficher 3 images côte à côte */
-        margin: 0 1%; /* Ajout d'un petit espacement entre les affiches */
+        flex: 0 0 30%; 
+        margin: 0 1%; 
     }
 
     .carousel__container {
-        padding: 0 1rem; /* Ajoute un léger padding pour centrer le contenu */
+        padding: 0 1rem; 
     }
 
     .film__image-img {
         max-width: 100%;
-        border-radius: 8px; /* Ajout d'un arrondi pour un meilleur rendu visuel */
+        border-radius: 8px; 
     }
 
     .carousel__legende {
-        font-size: 1rem; /* Réduction légère du texte pour correspondre à l'affichage paysage */
+        font-size: 1rem; 
         text-align: center;
     }
 }

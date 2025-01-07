@@ -1,0 +1,84 @@
+.musique{
+    background-color: white;
+}
+
+.musique__titre{
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+.musique__presentation {
+    margin-top: 1.5rem;
+}
+
+/* Biographie */
+.musique__biographie h2 {
+    margin-top: 50px;
+}
+
+.musique__biographie img {
+    border-radius: 10%;
+    display: block;
+}
+
+/* Analyse de la musique */
+.musique__analyse {
+    padding: 1rem;
+    background-color: white;
+    border-radius: 15px;
+    margin: 1.5rem 0;
+}
+
+.musique__analyse img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.musique__link {
+    display: inline-block;
+    color: #0b9bd9;
+    font-style:italic;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    text-align: center;
+    margin-top: 1rem;
+    position: relative;
+    left: 25%;
+}
+
+
+.musique__link-article {
+    display:inline-block;
+    position: relative;
+    border: 2px solid #1d5d65;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0.7rem 1rem;
+    background: linear-gradient(180deg, #2CB9C8 0%, #4FA4AD 50%, #176E77 100%);
+    color: white;
+    font-style: italic;
+    text-decoration: none;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    left: 25%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (orientation: landscape) and (max-width: 844px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    figure img {
+        max-width: 40%;
+    }
+
+    .musique__link {
+        max-width: 200px;
+    }
+}

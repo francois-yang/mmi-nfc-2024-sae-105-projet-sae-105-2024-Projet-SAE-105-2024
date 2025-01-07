@@ -1,47 +1,52 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const container = document.querySelector(".carousel__images");
-    const slides = document.querySelectorAll(".film__trilogie-item");
-    const prevButton = document.getElementById("prevButton");
-    const nextButton = document.getElementById("nextButton");
+    const carousels = [
+        {
+            container: document.querySelector("#carouselAntiquite .carousel__images"),
+            slides: document.querySelectorAll("#carouselAntiquite .film__trilogie-item"),
+            prevButton: document.querySelector("#prevButtonAntiquite"),
+            nextButton: document.querySelector("#nextButtonAntiquite")
+        },
+        {
+            container: document.querySelector("#carouselContemporain .carousel__images"),
+            slides: document.querySelectorAll("#carouselContemporain .film__trilogie-item"),
+            prevButton: document.querySelector("#prevButtonContemporain"),
+            nextButton: document.querySelector("#nextButtonContemporain")
+        },
+        {
+            container: document.querySelector("#carouselFutur .carousel__images"),
+            slides: document.querySelectorAll("#carouselFutur .film__trilogie-item"),
+            prevButton: document.querySelector("#prevButtonFutur"),
+            nextButton: document.querySelector("#nextButtonFutur")
+        },
+        {
+            container: document.querySelector("#carouselFilm .carousel__images"),
+            slides: document.querySelectorAll("#carouselFilm .film__trilogie-item"),
+            prevButton: document.querySelector("#prevButtonFilm"),
+            nextButton: document.querySelector("#nextButtonFilm")
+        }
+    ];
 
-    var currentIndex = 0;
+    carousels.forEach((carousel) => {
+        if (!carousel.container || !carousel.prevButton || !carousel.nextButton) {
+            console.warn("Carousel elements not found");
+            return;
+        }
 
-    function updateCarousel() {
-        const offset = -currentIndex * 100;
-        container.style.transform = `translateX(${offset}%)`;
-    }
+        let currentIndex = 0;
 
-    prevButton.addEventListener("click", () => {
-        currentIndex = currentIndex > 0 ? currentIndex - 1 : slides.length - 1;
-        updateCarousel();
-    });
+        function updateCarousel() {
+            const offset = -currentIndex * 100;
+            carousel.container.style.transform = `translateX(${offset}%)`;
+        }
 
-    nextButton.addEventListener("click", () => {
-        currentIndex = currentIndex < slides.length - 1 ? currentIndex + 1 : 0;
-        updateCarousel();
+        carousel.prevButton.addEventListener("click", () => {
+            currentIndex = currentIndex > 0 ? currentIndex - 1 : carousel.slides.length - 1;
+            updateCarousel();
+        });
+
+        carousel.nextButton.addEventListener("click", () => {
+            currentIndex = currentIndex < carousel.slides.length - 1 ? currentIndex + 1 : 0;
+            updateCarousel();
+        });
     });
 });
-
-function isLandscapeMode() {
-    return window.matchMedia("(orientation: landscape)").matches && window.innerWidth <= 844;
-}
-
-function manageCarouselMode() {
-    const carouselContainer = document.querySelector(".carousel__container");
-    const prevButton = document.getElementById("prevButton");
-    const nextButton = document.getElementById("nextButton");
-
-    if (isLandscapeMode()) {
-        carouselContainer.style.overflow = "hidden";
-        prevButton.style.display = "none";
-        nextButton.style.display = "none";
-    }
-    else {
-        carouselContainer.style.overflow = "auto";
-        prevButton.style.display = "block";
-        nextButton.style.display = "block";
-    }
-}
-
-window.addEventListener("load", manageCarouselMode);
-window.addEventListener("resize", manageCarouselMode);

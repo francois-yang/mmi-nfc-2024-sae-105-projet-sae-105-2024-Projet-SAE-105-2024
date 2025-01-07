@@ -1,0 +1,138 @@
+.contact {
+    padding: 2rem 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.contact__titre {
+    font-size: 1.4rem;
+    font-family:'aldrich', sans-serif;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    color: #1d5d65;
+    border-bottom: 2px solid #349cc2;
+    padding-bottom: 0.5rem;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color:#b8e8f3;
+}
+
+
+.contact__input,
+.contact__textarea {
+    border: 1px solid #b0c4de;
+    font-family: 'exo', sans-serif;
+    border-radius: 8px;
+    background-color: #b8e8f3;
+    color:#1d5d65;
+    padding: 0.8rem;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact__button {
+    background: linear-gradient(180deg, #2CB9C8 0%, #4FA4AD 50%, #176E77 100%);
+    border: 2px solid #1d5d65;
+    font-family: 'exo', sans-serif;
+    color: white;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-top:25px;
+}
+
+/* Section Localisation */
+.localisation {
+    padding: 2rem 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.localisation__titre {
+    font-size: 1.4rem;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    color: #1d5d65;
+}
+
+.localisation__map {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.localisation__image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Section Coordonnées */
+.coordonnees {
+    padding: 2rem 1.5rem;
+    background-color: #f0f8ff;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.coordonnees__titre {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #1d5d65;
+}
+
+.coordonnees__adresse,
+.coordonnees__tel {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+}
+
+
+/* Section Horaires */
+.horaires {
+    padding: 2rem 1.5rem;
+    background-color: #e6f7fc;
+    border-radius: 10px;
+}
+
+.horaires__titre {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #1d5d65;
+}
+
+.horaires__texte {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive pour iPhone 12 Pro */
+@media (max-width: 844px) and (orientation: portrait) {
+    .contact__titre,
+    .localisation__titre,
+    .coordonnees__titre,
+    .horaires__titre {
+        font-size: 1.2rem;
+    }
+
+    .contact__input,
+    .contact__textarea {
+        font-size: 0.9rem;
+    }
+
+    .contact__button {
+        font-size: 1rem;
+    }
+
+    .chapeau__texte {
+        font-size: 1rem;
+    }
+}
