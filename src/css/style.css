@@ -20,7 +20,7 @@
 @import "section/le_livre.css";
 @import "section/realisateur.css";
 @import "section/musique.css";
-@import "section.realisateur.css";
+@import "section/realisateur.css";
 
 /*Components*/
 @import "components/button.css";

@@ -19,7 +19,6 @@
 .accueil__intro {
     background-color: white;
     padding: 2rem 1.5rem;
-    border: 1px solid #007e99;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 2rem auto;
@@ -52,7 +51,6 @@
 
 .accueil__titre {
     font-size: 1.8rem;
-    color: #004b5f;
     margin-top: 1rem;
     text-align: left;
 }

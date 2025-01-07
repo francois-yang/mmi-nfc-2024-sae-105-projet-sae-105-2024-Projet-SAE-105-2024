@@ -1,0 +1,126 @@
+/* Section réalisateur */
+.realisateur {
+    padding: 1.5rem;
+}
+
+.realisateur__titre {
+    font-size: 1.6rem;
+    border-bottom: 2px solid #007e99;
+    display: inline-block;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+.realisateur__image {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.realisateur__image-img {
+    width: 100%;
+    max-width: 280px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.realisateur__legende {
+    font-style: italic;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.realisateur__oeuvre-texte {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 1rem 0;
+    text-align: justify;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom:50px;
+    
+}
+
+/* Section début de carrière */
+.realisateur__debut {
+    padding: 1.5rem;
+}
+
+.realisateur__debut .realisateur__texte {
+    font-size: normal;
+    margin-bottom: 2rem;
+}
+
+/* Section style de réalisation */
+.realisateur__style {
+    padding: 1.5rem;
+}
+
+.realisateur__style .realisateur__texte {
+    margin-bottom: 2rem;
+    font-size : normal;
+}
+
+/* Section œuvres notables */
+.realisateur__oeuvres {
+    padding: 1.5rem;
+}
+
+.realisateur__film{
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+    width: 100%;
+}
+
+.realisateur__oeuvre {
+    flex: 0 0 45%;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.realisateur__oeuvre-img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 10px;
+    display: flex;
+    
+}
+
+.realisateur__oeuvre .realisateur__legende {
+    margin-top: 0.5rem;
+}
+
+/* Section héritage et influence */
+
+.realisateur__heritage::before {
+    content: "";
+    display: block;
+    width: 80%;
+    justify-content: center;
+    height: 2px; 
+    background-color: black; 
+    margin: -3rem auto 3rem auto; 
+}
+
+.realisateur__heritage {
+    padding: 1.5rem;
+}
+
+.realisateur__link {
+    display: inline-block;
+    flex-direction: column;
+    color: #0b9bd9;
+    font-style:italic;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    text-align: center;
+    margin-top: 1rem;
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    left: 35%;
+}
+
+
