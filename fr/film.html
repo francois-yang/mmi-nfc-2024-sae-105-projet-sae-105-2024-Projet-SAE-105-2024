@@ -45,7 +45,7 @@
         </div>
         <img src="/assets//img/image_header.webp" alt="Image de fond" class="header__background">
         <div class="header__content">
-            <h1 class="header__title">L'héritage de la protection</h1>
+            <h1 class="header__title">Le bouclier au coeur d'un film contemporain</h1>
         </div>
 
         <nav class="menu" id="mainNav" aria-hidden="true">
@@ -60,11 +60,11 @@
                         Avengers</a>
                 </li>
                 <li class="menu__item"><a href="../fr/realisateur.html" class="menu__link">Joe Johnston</a></li>
-                <li class="menu_item"><a href="../fr/musique.html">La musique "The Battle"</a></li>
-                <li class="menu_item"><a href="../fr/bouclier_futur.html">Bouclier du futur</a></li>
-                <li class="menu_item"><a href="../fr/filmographie.html">Filmographie</a></li>
-                <li class="menu_item"><a href="../fr/contact.html">Contact</a></li>
-                <li class="menu_item"><a href="../fr/a_propos.html">A propos</a></li>
+                <li class="menu__item"><a href="../fr/musique.html" class="menu__link">La musique "The Battle"</a></li>
+                <li class="menu__item"><a href="../fr/bouclier_futur.html" class="menu__link">Bouclier du futur</a></li>
+                <li class="menu__item"><a href="../fr/filmographie.html" class="menu__link">Filmographie</a></li>
+                <li class="menu__item"><a href="../fr/contact.html" class="menu__link">Contact</a></li>
+                <li class="menu__item"><a href="../fr/a_propos.html" class="menu__link">A propos</a></li>
             </ul>
         </nav>
 
@@ -128,25 +128,34 @@
         </section>
 
         <!-- Section Trilogie -->
-        <section class="film__trilogie">
-            <h2 class="film__titre">La trilogie Captain America</h2>
-            <div class="film__trilogie-images">
-                <figure class="film__trilogie-item">
-                    <img src="/assets/img/body/film/first_avenger.webp" alt="Captain America: First Avenger"
-                        class="film__trilogie-img">
-                    <figcaption>Captain America : First Avenger (2011)</figcaption>
-                </figure>
-                <figure class="film__trilogie-item">
-                    <img src="/assets/img/body/film/le-soldat-de-lhiver.webp" alt="Captain America: The Winter Soldier"
-                        class="film__trilogie-img">
-                    <figcaption<>Le soldat de l'hiver (2014)</figcaption>
-                </figure>
-                <figure class="film__trilogie-item">
-                    <img src="/assets/img/body/film/civil-war.webp" alt="Captain America: Civil War"
-                        class="film__trilogie-img">
-                    <figcaption>Captain America : Civil War (2016)</figcaption>
-                </figure>
+        <section class="carousel__film">
+            <h2 class="carousel__title">La trilogie Captain America</h2>
+            <div class="carousel__container">
+
+                <div class="carousel__images">
+                    <!-- Chaque affiche doit être un élément direct -->
+                    <figure class="film__trilogie-item">
+                        <img src="/assets/img/body/film/first_avenger.webp" alt="Captain America: First Avenger"
+                            class="film__trilogie-img">
+                        <figcaption class="carousel__legende">Captain America : First Avenger (2011)</figcaption>
+                    </figure>
+                    <figure class="film__trilogie-item">
+                        <img src="/assets/img/body/film/le-soldat-de-lhiver.webp"
+                            alt="Captain America: The Winter Soldier" class="film__trilogie-img">
+                        <figcaption class="carousel__legende">Le soldat de l'hiver (2014)</figcaption>
+                    </figure>
+                    <figure class="film__trilogie-item">
+                        <img src="/assets/img/body/film/civil-war.webp" alt="Captain America: Civil War"
+                            class="film__trilogie-img">
+                        <figcaption class="carousel__legende">Captain America : Civil War (2016)</figcaption>
+                    </figure>
+                </div>
             </div>
+            <div class="carousel__nav">
+                <button class="carousel__button" id="prevButton">❮</button>
+                <button class="carousel__button" id="nextButton">❯</button>
+            </div>
+            <div class="carousel__dots"></div>
         </section>
 
         <!-- Section Rôle du bouclier -->
@@ -193,8 +202,8 @@
                     loading="lazy">
                 <img src="../assets/img/footer/logo_facebook.webp" alt="logo Facebook" class="footer__social-icon"
                     loading="lazy">
-                <img src="../assets/img/footer/logo_mmi.webp" alt="Logo de MMI Montbéliard" class="footer__social-icon"
-                    loading="lazy">
+                <img src="../assets/img/footer/logo_mmi.webp" alt="Logo de MMI Montbéliard"
+                    class="footer__social-icon-mmi" loading="lazy">
             </div>
         </div>
         <div class="footer__infos">

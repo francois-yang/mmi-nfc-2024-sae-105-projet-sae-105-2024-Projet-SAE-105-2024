@@ -7,6 +7,7 @@
 /*Layout*/
 @import "layout/header.css";
 @import "layout/footer.css";
+@import "layout/chapeau.css";
 
 /*Section*/
 @import "section/a_propos.css";
@@ -29,7 +30,7 @@
 @import "components/lightbox.css";
 
 /*Carrousel*/
-@import "components/carrousel.css";
+@import "carrousel/carousel.css";
 
 /*Vendors*/
 @import "normalize.css";

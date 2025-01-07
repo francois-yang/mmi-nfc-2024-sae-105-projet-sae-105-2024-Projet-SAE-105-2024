@@ -1,18 +1,4 @@
-/* Chapeau */
-.chapeau {
-    text-align: center;
-    margin-bottom: 1.5rem;
-}
 
-.chapeau_texte {
-    font-size: 1.2rem; 
-    font-style: italic;
-    color: #007e99;
-    padding: 0.8rem;
-    border-left: 4px solid #007e99;
-    background-color: #f4f9fa;
-    border-radius: 8px;
-}
 
 /* Section du livre */
 .livre {
@@ -24,7 +10,7 @@
 }
 
 .livre__titre {
-    font-size: 1.4rem; 
+    font-size: 1.4rem;
     color: #004b5f;
     text-align: center;
     margin-bottom: 1rem;
@@ -41,7 +27,11 @@
 }
 
 .livre__image {
-    max-width: 50%; 
+    max-width: 60%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 50px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
@@ -50,7 +40,7 @@
     margin-top: 20px;
     color: #004b5f;
     text-align: center;
-    right:10px;
+    right: 10px;
 }
 
 /* Texte du livre */
@@ -66,40 +56,60 @@
 }
 
 /* Lien */
-a {
-    text-decoration: none;
+.livre__link {
+
     color: #007e99;
     font-weight: bold;
+    display: inline-block;
+    transition: all 0.3s;
 }
 
-a:hover {
+.livre__link:active {
+    transform: scale(0.98);
+}
+
+.livre__link:hover {
     text-decoration: underline;
 }
 
 /* Bouton de lien vers l'article */
 .film__link {
     display: inline-block;
-    background-color: #007e99;
-    color: white;
-    padding: 0.6rem 1.2rem; 
+    flex-direction: column;
+    color: #0b9bd9;
+    font-style:italic;
+    padding: 0.6rem 1.2rem;
     border-radius: 6px;
     text-align: center;
     margin-top: 1rem;
-}
-
-.film__link:hover {
-    background-color: #005f73;
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    left: 45%;
 }
 
 /* Dernier paragraphe */
 .livre__fin {
-    text-align: center;
+    text-align: left;
+    margin-left: 20px;
     margin-top: 2rem;
+
 }
 
 .livre__fin-texte {
     font-size: 1rem;
     line-height: 1.4;
-    color: #004b5f;
+    color: black;
+    font-family: 'Exo', sans-serif;
+    text-align: left;
 }
 
+.livre__fin-texte::before {
+    content: "";
+    display: block;
+    width: 80%;
+    justify-content: center;
+    height: 2px; 
+    background-color: black; 
+    margin: 0 auto 1rem auto; 
+}
