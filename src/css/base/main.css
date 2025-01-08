@@ -1,9 +1,10 @@
-img{
+img {
     width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 figcaption {
     margin-top: 0.5rem;
     font-style: italic;
@@ -17,33 +18,43 @@ body {
     box-sizing: border-box;
     font-family: 'exo', sans-serif;
     background-color: #eaf9ff;
-    color: #00303f;
+    color: #1d5d65;
 }
 
-h1, h2, p, a {
+h1,
+h2,
+p,
+a {
     margin: 0;
     padding: 0;
 }
 
-h2{
+h2 {
     font-family: 'Aldrich', sans-serif;
-    font-weight: normal;
+    font-weight: bold;
     color: #1d5d65;
     border-bottom: 2px solid #007e99;
-    margin-top:30px;
+    margin-top: 0px;
+    width: 80%;
 }
 
-h2::before{
-content: "";
-display: block;
-width: 90%;
-justify-content: center;
-position : relative;
-height: 2px; 
-background-color: #007e99; 
-margin: -2rem auto 3rem auto; 
+h2::before {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 2px;
+    background-color: #007e99;
+    margin: 1rem auto 3rem auto
 }
 
-p{
+
+@media (max-width: 768px) {
+    h2::before {
+        width: 100%;
+        /* Sur mobile, la barre prend toute la largeur */
+    }
+}
+
+p {
     font-family: 'Exo', sans-serif;
 }

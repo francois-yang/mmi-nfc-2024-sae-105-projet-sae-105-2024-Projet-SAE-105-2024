@@ -1,0 +1,230 @@
+.bouclier__titre {
+    left : 25px;
+    position :relative;
+    width: 90%;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+/* Style des images */
+.bouclier__images {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.bouclier__image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 15px;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bouclier__legende {
+    margin-top: 0.5rem;
+    font-style: italic;
+    font-size: 1rem;
+    color: #4d4d4d;
+}
+
+/* Contenu des sections */
+.bouclier__contenu {
+    margin-top: 1.5rem;
+}
+
+.bouclier__sous-titre {
+    margin-left:15px;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: #228b98;
+    border-left: 4px solid #228b98;
+    padding-left: 0.5rem;
+}
+
+.bouclier__texte {
+    left : 15px;
+    position :relative;
+    width: 90%;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.bouclier__texte-fin {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: left;
+    padding: 1rem;
+    border-top: 2px solid #007e99;
+}
+
+/* Bouton de redirection */
+.livre__link a {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    background: linear-gradient(180deg, #2CB9C8 0%, #4FA4AD 50%, #176E77 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-style:italic;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    left:55%;
+    position: relative;
+}
+
+/*Frise*/
+
+.timeline {
+    position: relative;
+    padding: 1rem 0;
+    background-color: #f0f8fb;
+    overflow: hidden;
+    margin: 1rem auto;
+}
+
+.timeline__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: left;
+    margin-left:10px;
+    margin-bottom: 1rem;
+}
+
+.timeline__subtitle {
+    font-size: 1rem;
+    margin-left: 15px;
+    line-height: 1.6;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.timeline__container {
+    display: grid;
+    grid-template-columns: 1fr 20px 1fr; /* 1 colonne pour le texte à gauche, 1 pour la barre, 1 pour le texte à droite */
+    align-items: center;
+    position: relative;
+    padding: 2rem 0;
+
+}
+
+.timeline__bar{
+    background-color: #007e99; 
+    width: 4px; 
+    grid-column: 2 / 3;
+    height: 100%;
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-50%);
+}
+
+.timeline__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    position: relative;
+}
+
+.timeline__item--left {
+    position:relative;
+    bottom:120px;
+    grid-column: 1 / 2;
+    text-align: right;
+}
+
+.timeline__item--right {
+    position:relative;
+    margin-bottom: 50px;
+    top:100px;
+    grid-column: 3 / 4; 
+    text-align: left;
+}
+
+.timeline__content {
+    flex: 1;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #007e99;
+    font-style: italic;
+}
+
+.timeline__content-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007e99;
+    margin-bottom: 0.5rem;
+}
+
+.timeline__era {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007e99;
+    margin-bottom: 0.5rem;
+}
+
+.timeline__image {
+    width: auto;
+    height: 150px;
+    border-radius: 10%;
+
+}
+
+/* Responsive design pour écrans plus petits */
+@media (max-width: 768px) {
+    .timeline__container {
+        border-left: none;
+        padding-left: 0;
+    }
+
+    .timeline__item {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .timeline__content {
+        text-align: center;
+    }
+
+    .timeline__icon {
+        margin: 0 auto;
+    }
+}
+
+
+/* iPhone 12 Pro */
+@media (max-width: 844px) {
+    .bouclier__titre {
+        font-size: 1.5rem;
+    }
+
+    .bouclier__sous-titre {
+        font-size: 1.2rem;
+    }
+
+    .bouclier__texte {
+        font-size: 1rem;
+    }
+
+    .bouclier__image {
+        max-width: 90%;
+    }
+
+    .chapeau__texte {
+        font-size: 1rem;
+    }
+
+    .livre__link a {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+    }
+}

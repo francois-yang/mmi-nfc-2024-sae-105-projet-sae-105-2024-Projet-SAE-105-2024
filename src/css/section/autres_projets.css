@@ -1,0 +1,42 @@
+.autres-projets {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+h2.autres-projets__titre::before {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 2px;
+    background-color: #1d5d65;
+    margin: 1rem auto 3rem auto;
+    
+}
+
+h2.autres-projets__titre {
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+    border-bottom: 2px solid #1d5d65;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    position:relative;
+    right: 80px;
+}
+
+.autres-projets__liste {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.autres-projets__item {
+    margin-bottom: 2rem;
+}
+
+.autres-projets__lien {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #228b98;
+    text-decoration: none;
+}

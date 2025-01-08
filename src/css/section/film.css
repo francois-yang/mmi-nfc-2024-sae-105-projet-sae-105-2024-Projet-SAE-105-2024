@@ -4,9 +4,7 @@
 
 .film__titre {
     font-size: 1.4rem;
-    left: 0;
     margin-left: 20px;
-    margin-bottom: 1rem;
     color: #004b5f;
     display: inline-block;
     padding-bottom: 0.3rem;
@@ -26,11 +24,11 @@
 
 .film__texte {
     font-size: 1.1rem;
-    line-height: 1.6;
+    line-height: 1.5;
     margin: 1rem 0;
     text-align: left;
     width: 90%;
-    margin-left:20px;
+    margin-left: 20px;
 }
 
 /* Transformation Section */
@@ -65,6 +63,48 @@
     margin: 0 auto;
     display: block;
 }
+
+/* Section "Plus de films" */
+
+
+.film__separator {
+    border: none;
+    height: 2px;
+    background-color: #1d5d65;
+    margin: 2rem auto;
+    width: 50%;
+}
+
+/* Section "Présentation du réalisateur" */
+.film__link-filmographie {
+    color: #0b9bd9;
+    text-align: right;
+    margin-left: 50%;
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-style: italic;
+    margin-top: 1rem;
+    display: inline-block;
+    transition: color 0.3s ease-in-out;
+}
+
+.film__link-realisateur {
+    color: #0b9bd9;
+    text-align: right;
+    margin-left: 35%;
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-style: italic;
+    margin-bottom: 2rem;
+    display: inline-block;
+    transition: color 0.3s ease-in-out;
+}
+
+.film__director-intro .film__texte {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
 
 @media (max-width: 768px) {
     .film__titre {

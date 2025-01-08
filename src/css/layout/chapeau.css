@@ -1,16 +1,23 @@
-/* Chapeau */
 .chapeau {
-    text-align:left;
-    margin-bottom: 2rem;
-    margin-top:-25px;
-    margin-left:20px;
+    background: linear-gradient(180deg, var(--bleu-vert-clair) 0%, var(--bleu-ciel) 10%);
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 155, 217, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.chapeau::before {
+    content: ""; 
+    font-size: 1.5rem;
+    color: var(--bleu-vert-foncé); 
 }
 
 .chapeau__texte {
+    font-family: 'Aldrich', sans-serif;
     font-size: 1.2rem;
-    font-style: italic;
-    color: #007e99;
-    padding: 0.8rem;
-    border-radius: 8px;
+    line-height: 1.6;
+    color: #1d5d65;
+    margin: 0;
 }
-

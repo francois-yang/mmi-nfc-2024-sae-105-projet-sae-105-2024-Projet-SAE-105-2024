@@ -7,8 +7,9 @@
 
 /* Titre principal */
 .futur__titre {
-    text-align: center;
-    font-size: 1.8rem;
+    text-align: left;
+    margin-left: 15px;
+    font-size: 1.6rem;
     margin-bottom: 1rem;
     color: #1d5d65;
     border-bottom: 2px solid #007e99;

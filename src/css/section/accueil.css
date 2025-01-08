@@ -1,17 +1,30 @@
 .accueil__chapo {
-    padding: 2rem 1rem;
+    padding: 0 1rem;
     text-align: center;
+    max-width: 800px;
 }
 
 .accueil__title {
     font-size: 2rem;
     margin-bottom: 1rem;
+    margin-left:10%;
     font-weight: bold;
+    color: var(--bleu-vert-foncé); 
+    
 }
-
 .accueil__texte {
     font-size: 1.2rem;
-    line-height: 1.6;
+    line-height: 1.8;
+    color: var(--bleu-vert);
+}
+
+.accueil__texte::after{
+    content: "";
+    display: block;
+    width: 80%;
+    height: 2px;
+    background-color: var(--bleu-vert);
+    margin: 1rem auto;
 }
 
 /* Section Intro */
