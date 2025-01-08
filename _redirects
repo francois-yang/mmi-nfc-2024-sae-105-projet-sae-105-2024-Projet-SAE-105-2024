@@ -1,4 +1,4 @@
 /fr/ 302! Language=fr
 /en/ 302! Language=en
-/en/*/en/404.html 404
-/fr/*/fr/404.html 404
+/en/*/en/page_erreur.html 404
+/fr/*/fr/page_erreur.html 404

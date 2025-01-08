@@ -36,7 +36,8 @@ h2 {
     border-bottom: 2px solid #007e99;
     margin-top: 0px;
     width: 100%;
-    
+    letter-spacing: 3px;
+     
 }
 
 h2::before {
