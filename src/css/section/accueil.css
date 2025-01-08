@@ -1,5 +1,6 @@
 .accueil__chapo {
     padding: 0 1rem;
+    line-height: 3rem;
     text-align: center;
     max-width: 800px;
 }
@@ -7,9 +8,8 @@
 .accueil__title {
     font-size: 2rem;
     margin-bottom: 1rem;
-    margin-left:10%;
+    margin-left:0;
     font-weight: bold;
-    color: var(--bleu-vert-foncé); 
     
 }
 .accueil__texte {

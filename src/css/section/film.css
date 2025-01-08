@@ -77,27 +77,35 @@
 
 /* Section "Présentation du réalisateur" */
 .film__link-filmographie {
-    color: #0b9bd9;
-    text-align: right;
-    margin-left: 50%;
-    font-size: 1.1rem;
-    text-decoration: none;
-    font-style: italic;
-    margin-top: 1rem;
     display: inline-block;
-    transition: color 0.3s ease-in-out;
+    padding: 0.7rem 1.5rem;
+    background: linear-gradient(180deg, #2CB9C8 0%, #4FA4AD 50%, #176E77 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-style:italic;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    left:43%;
+    position: relative;
 }
 
 .film__link-realisateur {
-    color: #0b9bd9;
-    text-align: right;
-    margin-left: 35%;
-    font-size: 1.1rem;
-    text-decoration: none;
-    font-style: italic;
-    margin-bottom: 2rem;
     display: inline-block;
-    transition: color 0.3s ease-in-out;
+    padding: 0.7rem 1.5rem;
+    background: linear-gradient(180deg, #2CB9C8 0%, #4FA4AD 50%, #176E77 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-style:italic;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    left:25%;
+    position: relative;
 }
 
 .film__video {
@@ -108,14 +116,6 @@
     margin-bottom: -30px;
 }
 
-.film__indic {
-    font-size: 0.8rem;
-    font-style: italic;
-    display: inline-block;
-    text-align: center;
-    margin-top: 40px;
-    margin-left: 40px;
-}
 
 .film__director-intro .film__texte {
     font-size: 1rem;
