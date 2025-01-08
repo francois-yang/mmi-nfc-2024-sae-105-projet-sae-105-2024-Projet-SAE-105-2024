@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+
+    <!--Style-->
+    <link href="/src/css/style.css" rel="stylesheet" />
+
+    <!--Scripts-->
+    <script type="module" src="/src/js/carrousel.js"></script>
+    <script type="module" src="/src/js/menu.js"></script>
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aldrich&family=Exo:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="../assets/img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../assets/img/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="../assets/img/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="../assets/img/favicon/site.webmanifest" />
+</head>
+
+<body>
+
+    <header class="header">
+        <button class="menu__toggle" id="menuToggle">☰</button>
+        <div class="header__banner">
+            <a href="../en/index.html" target="blank" class="header__logo-link">
+                <img src="/assets/img/logo_bouclier.webp" alt="Bouclier Futur Logo" class="header__logo-img"></a>
+        </div>
+        <img src="/assets/img/image_header.webp" alt="Background Image" class="header__background">
+        <div class="form__container">
+            <div class="form__content">
+                <div class="language-selector">
+                    <a href="../fr/contact.html" onclick="document.cookie = `nf_lang=fr; path=/ ; SameSite=Strict`"
+                        style="text-decoration: none;" class="lang-btn">FR</a>
+                    <span class="divider"></span>
+                    <a href="../en/contact.html" onclick="document.cookie = `nf_lang=en; path=/ ; SameSite=Strict`"
+                        style="text-decoration: none;" class="lang-btn">EN</a>
+                </div>
+            </div>
+        </div>
+        <h1 class="header__title">Contact</h1>
+
+        <nav class="menu" id="mainNav" aria-hidden="true">
+            <button class="menu__close" id="menuClose">&times;</button>
+            <ul class="menu__list">
+                <li class="menu__item"><a href="../en/index.html" class="menu__link">Home</a></li>
+                <li class="menu__item"><a href="../en/bouclier.html" class="menu__link">The Shield</a>
+                </li>
+                <li class="menu__item"><a href="../en/le_livre.html" class="menu__link">The Iliad</a>
+                </li>
+                <li class="menu__item"><a href="../en/film.html" class="menu__link">Captain America: First Avenger</a>
+                </li>
+                <li class="menu__item"><a href="../en/realisateur.html" class="menu__link">Joe Johnston</a></li>
+                <li class="menu__item"><a href="../en/musique.html" class="menu__link">The Music "The Battle"</a></li>
+                <li class="menu__item"><a href="../en/bouclier_futur.html" class="menu__link">Shield of the Future</a>
+                </li>
+                <li class="menu__item"><a href="../en/filmographie.html" class="menu__link">Filmography</a></li>
+                <li class="menu__item"><a href="../en/contact.html" class="menu__link">Contact</a></li>
+                <li class="menu__item"><a href="../en/a_propos.html" class="menu__link">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="chapeau">
+            <p class="chapeau__texte">If you have any questions, enter your contact details so we can get back to you.
+            </p>
+        </div>
+
+        <!-- Contact Section -->
+        <section class="contact">
+            <h2 class="contact__titre">Contact Me</h2>
+            <form class="contact__form" action="#" method="POST">
+                <input type="text" class="contact__input" placeholder="First Name" required>
+                <input type="text" class="contact__input" placeholder="Last Name" required>
+                <input type="email" class="contact__input" placeholder="Email Address" required>
+                <input type="tel" class="contact__input" placeholder="Phone Number">
+                <textarea class="contact__textarea" placeholder="Message" rows="5" required></textarea>
+                <button type="submit" class="contact__button">Submit</button>
+            </form>
+        </section>
+
+        <!-- Location Section -->
+        <section class="localisation">
+            <h2 class="localisation__titre">Location</h2>
+            <div class="localisation__map">
+                <img src="/assets/img/body/contact/carte.webp" alt="Location Map" class="localisation__image">
+            </div>
+        </section>
+
+        <!-- Contact Details Section -->
+        <section class="coordonnees">
+            <h2 class="coordonnees__titre">Contact Information</h2>
+            <p class="coordonnees__adresse"><strong>Address:</strong> 4 Pl. Lucien Tharradin, 25200 Montbéliard</p>
+            <p class="coordonnees__tel"><strong>Phone:</strong> 03 81 99 47 34</p>
+        </section>
+
+        <!-- Opening Hours Section -->
+        <section class="horaires">
+            <h2 class="horaires__titre">Opening Hours:</h2>
+            <p class="horaires__texte"><strong>Monday - Tuesday - Thursday - Friday:</strong><br>8:00 AM to 12:00 PM –
+                1:00 PM to 5:00 PM</p>
+            <p class="horaires__texte"><strong>Tuesday by phone or email only.</strong></p>
+            <p class="horaires__texte"><strong>Wednesday:</strong><br>8:00 AM to 12:00 PM</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__section">
+            <h1 class="footer__section-title">Menu</h1>
+            <ul class="footer__list">
+                <li class="footer__item"><a href="/en/contact.html" class="footer__link">Contact</a></li>
+                <li class="footer__item"><a href="/en/a_propos.html" class="footer__link">About</a></li>
+                <li class="footer__item"><a href="/en/autres_projets.html" class="footer__link">Other Projects</a></li>
+                <li class="footer__item"><a href="/en/mention_legale" class="footer__link">Legal Notices</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__section">
+            <h3 class="footer__section-title">Our Social Media</h3>
+            <div class="footer__socials">
+                <img src="../assets/img/footer/logo_youtube.webp" alt="YouTube Logo" class="footer__social-icon"
+                    loading="lazy">
+                <img src="../assets/img/footer/logo_linkdin.webp" alt="LinkedIn Logo" class="footer__social-icon"
+                    loading="lazy">
+                <img src="../assets/img/footer/logo_instagram.webp" alt="Instagram Logo" class="footer__social-icon"
+                    loading="lazy">
+                <img src="../assets/img/footer/logo_facebook.webp" alt="Facebook Logo" class="footer__social-icon"
+                    loading="lazy">
+                <img src="../assets/img/footer/logo_mmi.webp" alt="MMI Montbéliard Logo" class="footer__social-icon-mmi"
+                    loading="lazy">
+            </div>
+        </div>
+        <div class="footer__infos">
+            <span>Francois YANG, Group C2</span>
+            <span>October 25, 2024</span>
+        </div>
+    </footer>
+</body>
+
+</html>

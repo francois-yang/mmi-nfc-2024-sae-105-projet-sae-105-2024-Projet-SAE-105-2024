@@ -100,6 +100,23 @@
     transition: color 0.3s ease-in-out;
 }
 
+.film__video {
+    width: 80%;
+    height: 80%;
+    max-width: calc(100%-4rem);
+    margin: 1rem 2rem;
+    margin-bottom: -30px;
+}
+
+.film__indic {
+    font-size: 0.8rem;
+    font-style: italic;
+    display: inline-block;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
 .film__director-intro .film__texte {
     font-size: 1rem;
     line-height: 1.5;

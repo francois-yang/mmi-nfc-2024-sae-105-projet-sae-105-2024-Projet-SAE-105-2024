@@ -31,11 +31,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Aldrich&family=Exo:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
         rel="stylesheet">
-        <link rel="icon" type="image/png" href="../assets/img/favicon/favicon-96x96.png" sizes="96x96" />
-        <link rel="icon" type="image/svg+xml" href="../assets/img/favicon/favicon.svg" />
-        <link rel="shortcut icon" href="../assets/img/favicon/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-touch-icon.png" />
-        <link rel="manifest" href="../assets/img/favicon/site.webmanifest" />
+    <link rel="icon" type="image/png" href="../assets/img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../assets/img/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="../assets/img/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="../assets/img/favicon/site.webmanifest" />
 
 </head>
 
@@ -51,9 +51,11 @@
         <div class="form__container">
             <div class="form__content">
                 <div class="language-selector">
-                    <a href="../fr/film.html" onclick="document.cookie = `nf_lang=fr; path=/ ; SameSite=Strict`" style="text-decoration: none;" class="lang-btn">FR</a>
+                    <a href="../fr/film.html" onclick="document.cookie = `nf_lang=fr; path=/ ; SameSite=Strict`"
+                        style="text-decoration: none;" class="lang-btn">FR</a>
                     <span class="divider"></span>
-                    <a href="../en/film.html" onclick="document.cookie = `nf_lang=en; path=/ ; SameSite=Strict`" style="text-decoration: none;" class="lang-btn">EN</a>
+                    <a href="../en/film.html" onclick="document.cookie = `nf_lang=en; path=/ ; SameSite=Strict`"
+                        style="text-decoration: none;" class="lang-btn">EN</a>
                 </div>
             </div>
         </div>
@@ -132,13 +134,12 @@
 
         <section class="film__bande-annonce">
             <h2 class="film__titre">Bande annonce</h2>
-            <div class="film__video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/JerVrbLldXw"
-                    title="Captain America: The First Avenger Bande-annonce" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
+            <video class="film__video" src="https://fryg.fr/video/bande_annonce_film.mp4" type="video/mp4"
+                poster="/assets/img/body/film/miniature.png" controls>
+            </video>
+            <span class="film__indic">Appuez sur espace pour lancer la vidéo après le clic.</span>
         </section>
+        
 
         <!-- Section Trilogie -->
         <section class="carousel__film" id="carouselFilm">
@@ -196,12 +197,13 @@
             </p>
             <a href="/fr/filmographie.html" class="film__link-filmographie">Voir d'autres films</a>
         </section>
-        
+
         <hr class="film__separator">
-        
+
         <section class="film__director-intro">
             <p class="film__texte">
-                Qui dit présentation d’un film, dit présentation du réalisateur. Je vous invite donc à rejoindre la page d’article sur le réalisateur en cliquant sur le lien ci-dessous :
+                Qui dit présentation d’un film, dit présentation du réalisateur. Je vous invite donc à rejoindre la page
+                d’article sur le réalisateur en cliquant sur le lien ci-dessous :
             </p>
             <a href="/fr/realisateur.html" class="film__link-realisateur">Vers l'article du réalisateur</a>
         </section>
