@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Les autres films</title>
+    <title>Other Films</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
@@ -32,85 +32,81 @@
         href="https://fonts.googleapis.com/css2?family=Aldrich&family=Exo:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
         rel="stylesheet">
 
-        <link rel="icon" type="image/png" href="../assets/img/favicon/favicon-96x96.png" sizes="96x96" />
-        <link rel="icon" type="image/svg+xml" href="../assets/img/favicon/favicon.svg" />
-        <link rel="shortcut icon" href="../assets/img/favicon/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-touch-icon.png" />
-        <link rel="manifest" href="../assets/img/favicon/site.webmanifest" />
+    <link rel="icon" type="image/png" href="../assets/img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../assets/img/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="../assets/img/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="../assets/img/favicon/site.webmanifest" />
 </head>
 
 <body>
     <header class="header">
         <button class="menu__toggle" id="menuToggle">☰</button>
         <div class="header__banner">
-            <a href="../fr/index.html" target="blank" class="header__logo-link">
-                <img src="/assets/img/logo_bouclier.webp" alt="Logo Bouclier futur" class="header__logo-img"></a>
+            <a href="../en/index.html" target="blank" class="header__logo-link">
+                <img src="/assets/img/logo_bouclier.webp" alt="Future Shield Logo" class="header__logo-img"></a>
         </div>
-        <img src="/assets/img/image_header.webp" alt="Image de fond" class="header__background">
+        <img src="/assets/img/image_header.webp" alt="Background Image" class="header__background">
         <div class="form__container">
             <div class="form__content">
                 <div class="language-selector">
-                    <a href="../fr/filmographie.html" onclick="document.cookie = `nf_lang=fr; path=/ ; SameSite=Strict`" style="text-decoration: none;" class="lang-btn">FR</a>
-                    <span class="divider"></span>
                     <a href="../en/filmographie.html" onclick="document.cookie = `nf_lang=en; path=/ ; SameSite=Strict`" style="text-decoration: none;" class="lang-btn">EN</a>
+                    <span class="divider"></span>
+                    <a href="../fr/filmographie.html" onclick="document.cookie = `nf_lang=fr; path=/ ; SameSite=Strict`" style="text-decoration: none;" class="lang-btn">FR</a>
                 </div>
             </div>
         </div>
         <div class="header__content">
-            <h1 class="header__title">L'héritage de la protection</h1>
+            <h1 class="header__title">Filmography</h1>
         </div>
 
         <nav class="menu" id="mainNav" aria-hidden="true">
             <button class="menu__close" id="menuClose">&times;</button>
             <ul class="menu__list">
-                <li class="menu__item"><a href="../fr/index.html" class="menu__link">Accueil</a></li>
-                <li class="menu__item"><a href="../fr/bouclier.html" class="menu__link">Le bouclier</a>
-                </li>
-                <li class="menu__item"><a href="../fr/le_livre.html" class="menu__link">L'Iliade</a>
-                </li>
-                <li class="menu__item"><a href="../fr/film.html" class="menu__link">Captain America : First
-                        Avengers</a>
-                </li>
-                <li class="menu__item"><a href="../fr/realisateur.html" class="menu__link">Joe Johnston</a></li>
-                <li class="menu__item"><a href="../fr/musique.html" class="menu__link">La musique "The Battle"</a></li>
-                <li class="menu__item"><a href="../fr/bouclier_futur.html" class="menu__link">Bouclier du futur</a></li>
-                <li class="menu__item"><a href="../fr/filmographie.html" class="menu__link">Filmographie</a></li>
-                <li class="menu__item"><a href="../fr/contact.html" class="menu__link">Contact</a></li>
-                <li class="menu__item"><a href="../fr/a_propos.html" class="menu__link">A propos</a></li>
+                <li class="menu__item"><a href="../en/index.html" class="menu__link">Home</a></li>
+                <li class="menu__item"><a href="../en/bouclier.html" class="menu__link">The Shield</a></li>
+                <li class="menu__item"><a href="../en/the_book.html" class="menu__link">The Iliad</a></li>
+                <li class="menu__item"><a href="../en/movie.html" class="menu__link">Captain America: First
+                        Avengers</a></li>
+                <li class="menu__item"><a href="../en/director.html" class="menu__link">Joe Johnston</a></li>
+                <li class="menu__item"><a href="../en/music.html" class="menu__link">The Battle Music</a></li>
+                <li class="menu__item"><a href="../en/future_shield.html" class="menu__link">Future Shield</a></li>
+                <li class="menu__item"><a href="../en/filmographie.html" class="menu__link">Filmography</a></li>
+                <li class="menu__item"><a href="../en/contact.html" class="menu__link">Contact</a></li>
+                <li class="menu__item"><a href="../en/about.html" class="menu__link">About</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div class="chapeau">
-            <p class="chapeau__texte">Voici une liste de films présentant un bouclier dans chacun d’eux sous différentes
-                époques.</p>
+            <p class="chapeau__texte">Here is a list of films featuring a shield in different eras.</p>
         </div>
 
         <section class="carousel__film" id="carouselAntiquite">
-            <h2 class="carousel__title">Films dans l'Antiquité</h2>
+            <h2 class="carousel__title">Films in Antiquity</h2>
             <div class="carousel__container">
                 <div class="carousel__images">
                     <figure class="film__trilogie-item">
-                        <img src="/assets/img/body/filmographie/troie.webp" alt="Affiche du film Troie"
+                        <img src="/assets/img/body/filmographie/troie.webp" alt="Troy Movie Poster"
                             class="film__trilogie-img">
-                        <figcaption class="carousel__legende">Troie (2004)
-                            <br>Thème : Guerre - Aventure - Historique
+                        <figcaption class="carousel__legende">Troy (2004)
+                            <br>Theme: War - Adventure - Historical
                         </figcaption>
                     </figure>
                     <figure class="film__trilogie-item">
-                        <img src="/assets/img/body/filmographie/300.webp" alt="Affiche du film 300"
+                        <img src="/assets/img/body/filmographie/300.webp" alt="300 Movie Poster"
                             class="film__trilogie-img">
                         <figcaption class="carousel__legende">
                             300 (2006)<br>
-                            Thème : Action - Histoire
+                            Theme: Action - History
                         </figcaption>
                     </figure>
                     <figure class="film__trilogie-item">
-                        <img src="/assets/img/body/filmographie/gladiator.webp" alt="Affiche du film Gladiator"
+                        <img src="/assets/img/body/filmographie/gladiator.webp" alt="Gladiator Movie Poster"
                             class="film__trilogie-img">
                         <figcaption class="carousel__legende">
-                           Gladiator (2000)
-                            <br>Thème : Drame - Historique
+                            Gladiator (2000)
+                            <br>Theme: Drama - Historical
                         </figcaption>
                     </figure>
                 </div>
@@ -123,38 +119,34 @@
         </section>
 
         <section class="carousel__film" id="carouselContemporain">
-            <h2 class="carousel__title">Films dans le Contemporain</h2>
+            <h2 class="carousel__title">Films in the Contemporary Era</h2>
             <div class="carousel__container">
                 <div class="carousel__images">
                     <figure class="film__trilogie-item">
                         <img src="/assets/img/body/filmographie/hunger_games.webp"
-                            alt="Affiche du film Hunger Games Mockingjay Part 2" class="film__trilogie-img">
+                            alt="The Hunger Games Mockingjay Part 2 Poster" class="film__trilogie-img">
                         <figcaption class="carousel__legende">
-                           Hunger Games Mockingjay - Part 2 (2015)<br>
-                                Thème : Action - Science-Fiction
+                            The Hunger Games: Mockingjay - Part 2 (2015)<br>
+                            Theme: Action - Science Fiction
                         </figcaption>
                     </figure>
                     <figure class="film__trilogie-item">
-                        <img src="/assets/img/body/filmographie/mad_max.webp" alt="Affiche du film Mad Max : Fury Road"
+                        <img src="/assets/img/body/filmographie/mad_max.webp" alt="Mad Max: Fury Road Poster"
                             class="film__trilogie-img">
                         <figcaption class="carousel__legende">
-                           Mad Max : Fury Road (2015)<br>Thème : Action -
-                                Science-fiction
-                            
+                            Mad Max: Fury Road (2015)<br>Theme: Action - Science Fiction
                         </figcaption>
                     </figure>
                     <figure class="film__trilogie-item">
-                        <img src="/assets/img/body/filmographie/wonder_woman.webp" alt="Affiche du film Wonder Woman"
+                        <img src="/assets/img/body/filmographie/wonder_woman.webp" alt="Wonder Woman Poster"
                             class="film__trilogie-img">
                         <figcaption class="carousel__legende">
-                           Wonder Woman (2017)<br>Thème : Action - Aventure -
-                                Fantastique
-                            
+                            Wonder Woman (2017)<br>Theme: Action - Adventure - Fantasy
                         </figcaption>
                     </figure>
                 </div>
             </div>
-            <div class="carousel__nav" >
+            <div class="carousel__nav">
                 <button class="carousel__button" id="prevButtonContemporain">❮</button>
                 <button class="carousel__button" id="nextButtonContemporain">❯</button>
             </div>
@@ -162,31 +154,31 @@
         </section>
 
         <section class="carousel__film" id="carouselFutur">
-            <h2 class="carousel__title">Films dans le Futur</h2>
+            <h2 class="carousel__title">Films in the Future</h2>
             <div class="carousel__container">
                 <div class="carousel__images">
                     <figure class="film__trilogie-item">
-                        <img src="/assets/img/body/filmographie/matrix.webp" alt="Affiche du film Matrix Reloaded"
+                        <img src="/assets/img/body/filmographie/matrix.webp" alt="Matrix Reloaded Poster"
                             class="film__trilogie-img">
                         <figcaption class="carousel__legende">
-                           Matrix Reloaded (2003)<br>
-                                Thème : Action - Science-Fiction
+                            Matrix Reloaded (2003)<br>
+                            Theme: Action - Science Fiction
                         </figcaption>
                     </figure>
                     <figure class="film__trilogie-item">
                         <img src="/assets/img/body/filmographie/black_panthere.webp"
-                            alt="Affiche du film Black Panthère" class="film__trilogie-img">
+                            alt="Black Panther Poster" class="film__trilogie-img">
                         <figcaption class="carousel__legende">
-                           Black Panthère (2018)<br>
-                                Thème : Action - Super-héros
+                            Black Panther (2018)<br>
+                            Theme: Action - Superhero
                         </figcaption>
                     </figure>
                     <figure class="film__trilogie-item">
-                        <img src="/assets/img/body/filmographie/star_wars.webp" alt="Affiche du film Star Wars"
+                        <img src="/assets/img/body/filmographie/star_wars.webp" alt="Star Wars Poster"
                             class="film__trilogie-img">
                         <figcaption class="carousel__legende">
-                           Star Wars Saga<br>
-                                Thème : Action - Science-Fiction
+                            Star Wars Saga<br>
+                            Theme: Action - Science Fiction
                         </figcaption>
                     </figure>
                 </div>
@@ -203,32 +195,30 @@
         <div class="footer__section">
             <h1 class="footer__section-title">Menu</h1>
             <ul class="footer__list">
-                <li class="footer__item"><a href="/fr/contact.html" class="footer__link">Contact</a></li>
-                <li class="footer__item"><a href="/fr/a_propos.html" class="footer__link">A propos</a></li>
-                <li class="footer__item"><a href="/fr/autres_projets.html" class="footer__link">Autres
-                        projets</a></li>
-                <li class="footer__item"><a href="/fr/mention_legale" class="footer__link">Mentions légales</a>
-                </li>
+                <li class="footer__item"><a href="/en/contact.html" class="footer__link">Contact</a></li>
+                <li class="footer__item"><a href="/en/a_propos.html" class="footer__link">About</a></li>
+                <li class="footer__item"><a href="/en/autres_projets.html" class="footer__link">Other Projects</a></li>
+                <li class="footer__item"><a href="/en/mention_legal.html" class="footer__link">Legal Notice</a></li>
             </ul>
         </div>
         <div class="footer__section">
-            <h3 class="footer__section-title">Nos réseaux sociaux</h3>
+            <h3 class="footer__section-title">Follow Us</h3>
             <div class="footer__socials">
-                <img src="../assets/img/footer/logo_youtube.webp" alt="logo Youtube" class="footer__social-icon"
+                <img src="../assets/img/footer/logo_youtube.webp" alt="YouTube Logo" class="footer__social-icon"
                     loading="lazy">
-                <img src="../assets/img/footer/logo_linkdin.webp" alt="logo LinkedIn" class="footer__social-icon"
+                <img src="../assets/img/footer/logo_linkdin.webp" alt="LinkedIn Logo" class="footer__social-icon"
                     loading="lazy">
-                <img src="../assets/img/footer/logo_instagram.webp" alt="logo Instagram" class="footer__social-icon"
+                <img src="../assets/img/footer/logo_instagram.webp" alt="Instagram Logo" class="footer__social-icon"
                     loading="lazy">
-                <img src="../assets/img/footer/logo_facebook.webp" alt="logo Facebook" class="footer__social-icon"
+                <img src="../assets/img/footer/logo_facebook.webp" alt="Facebook Logo" class="footer__social-icon"
                     loading="lazy">
-                <img src="../assets/img/footer/logo_mmi.webp" alt="Logo de MMI Montbéliard"
+                <img src="../assets/img/footer/logo_mmi.webp" alt="MMI Montbéliard Logo"
                     class="footer__social-icon-mmi" loading="lazy">
             </div>
         </div>
         <div class="footer__infos">
-            <span>Francois YANG groupe C2</span>
-            <span>25 octobre 2024</span>
+            <span>Francois YANG Group C2</span>
+            <span>October 25, 2024</span>
         </div>
     </footer>
 </body>

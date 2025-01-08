@@ -32,11 +32,11 @@
         href="https://fonts.googleapis.com/css2?family=Aldrich&family=Exo:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
         rel="stylesheet">
 
-        <link rel="icon" type="image/png" href="../assets/img/favicon/favicon-96x96.png" sizes="96x96" />
-        <link rel="icon" type="image/svg+xml" href="../assets/img/favicon/favicon.svg" />
-        <link rel="shortcut icon" href="../assets/img/favicon/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-touch-icon.png" />
-        <link rel="manifest" href="../assets/img/favicon/site.webmanifest" />
+    <link rel="icon" type="image/png" href="../assets/img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../assets/img/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="../assets/img/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="../assets/img/favicon/site.webmanifest" />
 </head>
 
 <body>
@@ -44,33 +44,40 @@
     <header class="header">
         <button class="menu__toggle" id="menuToggle">☰</button>
         <div class="header__banner">
-            <a href="../en/index.html" target="blank" class="header__logo-link">
-                <img src="/assets/img/logo_bouclier.webp" alt="Future Shield Logo" class="header__logo-img"></a>
+            <a href="../fr/index.html" target="blank" class="header__logo-link">
+                <img src="/assets/img/logo_bouclier.webp" alt="Logo Bouclier futur" class="header__logo-img"></a>
         </div>
-        <img src="/assets/img/image_header.webp" alt="Background Image" class="header__background">
-        <div class="header__content">
-            <h1 class="header__title">Music Dedicated to the Shield</h1>
-        </div>
+        <img src="/assets/img/image_header.webp" alt="Image de fond" class="header__background">
+        <div class="form__container">
+            <div class="form__content">
+                <div class="language-selector">
+                    <a href="../fr/musique.html" onclick="document.cookie = `nf_lang=fr; path=/ ; SameSite=Strict`"
+                        style="text-decoration: none;" class="lang-btn">FR</a>
+                    <span class="divider"></span>
+                    <a href="../en/musique.html" onclick="document.cookie = `nf_lang=en; path=/ ; SameSite=Strict`"
+                        style="text-decoration: none;" class="lang-btn">EN</a>
+                </div>
+            </div>
+            <div class="header__content">
+                <h1 class="header__title">Music Dedicated to the Shield</h1>
+            </div>
 
-        <nav class="menu" id="mainNav" aria-hidden="true">
-            <button class="menu__close" id="menuClose">&times;</button>
-            <ul class="menu__list">
-                <li class="menu__item"><a href="../en/index.html" class="menu__link">Home</a></li>
-                <li class="menu__item"><a href="../en/bouclier.html" class="menu__link">The Shield</a>
-                </li>
-                <li class="menu__item"><a href="../en/le_livre.html" class="menu__link">The Iliad</a>
-                </li>
-                <li class="menu__item"><a href="../en/film.html" class="menu__link">Captain America: First
-                        Avengers</a>
-                </li>
-                <li class="menu__item"><a href="../en/realisateur.html" class="menu__link">Joe Johnston</a></li>
-                <li class="menu__item"><a href="../en/musique.html" class="menu__link">The Battle Music</a></li>
-                <li class="menu__item"><a href="../en/bouclier_futur.html" class="menu__link">Future Shield</a></li>
-                <li class="menu__item"><a href="../en/filmographie.html" class="menu__link">Filmography</a></li>
-                <li class="menu__item"><a href="../en/contact.html" class="menu__link">Contact</a></li>
-                <li class="menu__item"><a href="../en/a_propos.html" class="menu__link">About</a></li>
-            </ul>
-        </nav>
+            <nav class="menu" id="mainNav" aria-hidden="true">
+                <button class="menu__close" id="menuClose">&times;</button>
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="../en/index.html" class="menu__link">Home</a></li>
+                    <li class="menu__item"><a href="../en/bouclier.html" class="menu__link">The Shield</a></li>
+                    <li class="menu__item"><a href="../en/le_livre.html" class="menu__link">The Iliad</a></li>
+                    <li class="menu__item"><a href="../en/film.html" class="menu__link">Captain America: First
+                            Avengers</a></li>
+                    <li class="menu__item"><a href="../en/realisateur.html" class="menu__link">Joe Johnston</a></li>
+                    <li class="menu__item"><a href="../en/musique.html" class="menu__link">The Battle Music</a></li>
+                    <li class="menu__item"><a href="../en/bouclier_futur.html" class="menu__link">Future Shield</a></li>
+                    <li class="menu__item"><a href="../en/filmographie.html" class="menu__link">Filmography</a></li>
+                    <li class="menu__item"><a href="../en/contact.html" class="menu__link">Contact</a></li>
+                    <li class="menu__item"><a href="../en/a_propos.html" class="menu__link">About</a></li>
+                </ul>
+            </nav>
     </header>
     <main>
         <!-- Intro -->
@@ -97,8 +104,7 @@
         <section class="musique__biographie">
             <h2 class="musique__titre">Hans Zimmer Biography</h2>
             <figure class="musique__image">
-                <img src="/assets/img/body/musique/concert.webp" alt="Hans Zimmer Photo"
-                    class="musique__image-img">
+                <img src="/assets/img/body/musique/concert.webp" alt="Hans Zimmer Photo" class="musique__image-img">
                 <figcaption class="musique__legende">Hans Zimmer Photo</figcaption>
             </figure>
             <p class="musique__texte">
@@ -142,7 +148,7 @@
                 After covering these articles, I invite you to explore a bonus page showcasing futuristic shield
                 concepts.
             </p>
-            <a href="en/bouclier_futur.html" class="musique__link-article">To the "Future Shield" page →</a>
+            <a href="/en/bouclier_futur.html" class="musique__link-article">To the "Future Shield" page →</a>
         </section>
     </main>
 
@@ -154,7 +160,7 @@
                 <li class="footer__item"><a href="/en/a_propos.html" class="footer__link">About</a></li>
                 <li class="footer__item"><a href="/en/autres_projets.html" class="footer__link">Other
                         projects</a></li>
-                <li class="footer__item"><a href="/en/mention_legale" class="footer__link">Legal Notice</a>
+                <li class="footer__item"><a href="/en/mention_legale;html" class="footer__link">Legal Notice</a>
                 </li>
             </ul>
         </div>
@@ -169,8 +175,8 @@
                     loading="lazy">
                 <img src="../assets/img/footer/logo_facebook.webp" alt="Facebook logo" class="footer__social-icon"
                     loading="lazy">
-                <img src="../assets/img/footer/logo_mmi.webp" alt="MMI Montbéliard Logo"
-                    class="footer__social-icon-mmi" loading="lazy">
+                <img src="../assets/img/footer/logo_mmi.webp" alt="MMI Montbéliard Logo" class="footer__social-icon-mmi"
+                    loading="lazy">
             </div>
         </div>
         <div class="footer__infos">

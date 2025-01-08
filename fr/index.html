@@ -41,10 +41,21 @@
     <header class="header">
         <button class="menu__toggle" id="menuToggle">☰</button>
         <div class="header__banner">
-            <a href="../fr/index.html" target="blank" class="header__logo-link">
+            <a href="#" target="blank" class="header__logo-link">
                 <img src="/assets/img/logo_bouclier.webp" alt="Logo Bouclier futur" class="header__logo-img"></a>
         </div>
         <img src="/assets/img/image_header.webp" alt="Image de fond" class="header__background">
+        <div class="form__container">
+            <div class="form__content">
+                <div class="language-selector">
+                    <a href="../fr/index.html" onclick="document.cookie = `nf_lang=fr; path=/ ; SameSite=Strict`"
+                        style="text-decoration: none;" class="lang-btn">FR</a>
+                    <span class="divider"></span>
+                    <a href="../en/index.html" onclick="document.cookie = `nf_lang=en; path=/ ; SameSite=Strict`"
+                        style="text-decoration: none;" class="lang-btn">EN</a>
+                </div>
+            </div>
+        </div>
         <div class="header__content">
             <h1 class="header__title">L'héritage de la protection</h1>
         </div>
@@ -72,6 +83,9 @@
     </header>
 
     <main>
+        <header>
+
+        </header>
         <section class="accueil">
             <div class="accueil__chapo">
                 <h2 class="accueil__title">Le bouclier : Gardien de l’histoire, inspirateur du futur</h2>
