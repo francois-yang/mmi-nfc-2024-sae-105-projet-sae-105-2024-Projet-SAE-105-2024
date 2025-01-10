@@ -1,5 +1,7 @@
-.musique{
-    background-color: white;
+.musique__texte--conclusion{
+    padding: 1rem;
+    border-radius: 15px;
+
 }
 
 .musique__titre{
@@ -7,14 +9,6 @@
     margin-bottom:50px;
 }
 
-.musique__presentation {
-    margin-top: 1.5rem;
-}
-
-/* Biographie */
-.musique__biographie h2 {
-    margin-top: 50px;
-}
 
 .musique__biographie img {
     border-radius: 10%;
@@ -22,9 +16,8 @@
 }
 
 /* Analyse de la musique */
-.musique__analyse {
+.musique__analyse, .musique__biographie, .musique__presentation, .musique, .musique__bouclier {
     padding: 1rem;
-    background-color: white;
     border-radius: 15px;
     margin: 1.5rem 0;
 }
